@@ -184,10 +184,86 @@
         <p class="section-number reveal">04 / Cùng làm điều hay</p>
         <div class="contact-content reveal">
           <h2>Có một ý tưởng<br /><em>đang lớn dần?</em></h2>
-          <a class="contact-button" href="mailto:hello@lastudio.vn">
-            <span>hello@lastudio.vn</span>
-            <strong>↗</strong>
-          </a>
+          <div class="contact-layout">
+            <div class="contact-intro">
+              <p>
+                Hãy kể chúng tôi nghe một chút về dự án. Chúng tôi thường phản hồi
+                trong vòng 1–2 ngày làm việc.
+              </p>
+              <a class="contact-email" href="mailto:hello@lastudio.vn">
+                hello@lastudio.vn ↗
+              </a>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <label class="form-field">
+                  <span>Tên của bạn *</span>
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="Nguyễn An"
+                    required
+                  />
+                  <small class="field-error"></small>
+                </label>
+
+                <label class="form-field">
+                  <span>Email *</span>
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="ban@email.com"
+                    required
+                  />
+                  <small class="field-error"></small>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label class="form-field">
+                  <span>Bạn cần hỗ trợ về</span>
+                  <select name="project">
+                    <option value="Thương hiệu">Thương hiệu</option>
+                    <option value="Website">Website</option>
+                    <option value="Sản phẩm số">Sản phẩm số</option>
+                    <option value="Khác">Một điều khác</option>
+                  </select>
+                </label>
+
+                <label class="form-field">
+                  <span>Ngân sách dự kiến</span>
+                  <select name="budget">
+                    <option value="Chưa xác định">Chưa xác định</option>
+                    <option value="Dưới 30 triệu">Dưới 30 triệu</option>
+                    <option value="30–80 triệu">30–80 triệu</option>
+                    <option value="Trên 80 triệu">Trên 80 triệu</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="form-field">
+                <span>Kể chúng tôi nghe về dự án *</span>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Ý tưởng, mục tiêu hoặc điều bạn đang trăn trở..."
+                  required
+                ></textarea>
+                <small class="field-error"></small>
+              </label>
+
+              <div class="form-footer">
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+                <button class="contact-button" type="submit">
+                  <span>Gửi lời nhắn</span>
+                  <strong>↗</strong>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="contact-orbit" aria-hidden="true"></div>
       </section>
